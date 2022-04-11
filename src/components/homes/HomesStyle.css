@@ -1,0 +1,161 @@
+.homes-section {
+    background-color: #EAF0F9;
+    padding: 120px 104px 120px;
+}
+
+.homes-header {
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 105px;
+
+}
+
+.homes-header:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #F5BD41;
+    top: 150%;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.homes-header:hover:before {
+    transform: scale(1);
+
+}
+
+.homes-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.homes-img {
+    width: 296px;
+    height: 296px;
+}
+
+.homes-item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.homes-place {
+    color: #BFBFBF;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 28px;
+}
+
+.homes-link {
+    color: #3077C6;
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+@media (max-width: 1280px) {
+    .homes-section {
+        padding-right: 73px;
+        padding-left: 73px;
+    }
+
+    .homes-link {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .homes-place {
+        margin: 8px 0 0;
+        font-size: 20px;
+    }
+}
+@media (max-width: 1140px) {
+    .homes-img {
+        width: 233px;
+        height: 233px;
+    }
+}
+@media (max-width: 925px) {
+    .homes-img {
+        width: 244px;
+        height: 244px;
+    }
+}
+@media (max-width: 840px) {
+    .homes-link, .homes-place {
+        font-size: 18px;
+    }
+
+    .homes-img {
+        width: 216px;
+        height: 216px;
+    }
+}
+@media (max-width: 768px) {
+    .homes-img {
+        width: 295px;
+        height: 295px;
+    }
+
+    .homes-section {
+        padding: 51px 73px;
+    }
+}
+@media (max-width: 680px) {
+    .homes-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .homes-section {
+        padding: 40px 20px;
+    }
+
+    .homes-link {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 12px;
+    }
+
+    .homes-place {
+        margin: 8px 0 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .homes-img {
+        width: 177px;
+        height: 177px;
+    }
+
+    .homes-section {
+        padding: 40px 15px;
+    }
+
+    .homes-title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .homes-link {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 8px;
+    }
+
+    .homes-place {
+        margin: 4px 0 0;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
